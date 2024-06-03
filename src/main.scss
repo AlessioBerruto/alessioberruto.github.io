@@ -1,1 +1,67 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
+@import "./variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $fonts;
+
+}
+
+nav {
+
+    background-color: $primary;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+
+    img {
+        margin-top: -2px;
+    }
+
+    li {
+        margin-right: 10px;
+    }
+
+    p {
+        display: inline;
+        font-weight: 400;
+        font-size: 22px;
+        color: aliceblue;
+    }
+
+    .navbar-toggler {
+        border-color: aliceblue;
+    }
+
+    .brand-name {
+        margin-left: 10px;
+
+    }
+}
+
+.home-section,
+.portfolio-section,
+.about-section,
+.contacts-section {
+    height: 800px;
+    padding-top: 60px;
+}
+
+.home-section {
+    background-color: $secondary;
+}
+
+.portfolio-section {
+    background-color: $third;
+}
+
+.about-section {
+    background-color: $forth;
+}
+
+.contacts-section {
+    background-color: $fifth;
+}

@@ -11965,3 +11965,59 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+}
+
+nav {
+  background-color: #4c516d;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+nav img {
+  margin-top: -2px;
+}
+nav li {
+  margin-right: 10px;
+}
+nav p {
+  display: inline;
+  font-weight: 400;
+  font-size: 22px;
+  color: aliceblue;
+}
+nav .navbar-toggler {
+  border-color: aliceblue;
+}
+nav .brand-name {
+  margin-left: 10px;
+}
+
+.home-section,
+.portfolio-section,
+.about-section,
+.contacts-section {
+  height: 800px;
+  padding-top: 60px;
+}
+
+.home-section {
+  background-color: #979aaa;
+}
+
+.portfolio-section {
+  background-color: #838996;
+}
+
+.about-section {
+  background-color: #989898;
+}
+
+.contacts-section {
+  background-color: #8b8589;
+}
