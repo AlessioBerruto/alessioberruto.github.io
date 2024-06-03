@@ -11975,6 +11975,7 @@ body {
   font-family: "Ubuntu", Arial, Helvetica, sans-serif;
 }
 
+/* NAVBAR */
 nav {
   background-color: #4c516d;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
@@ -11992,7 +11993,10 @@ nav p {
   color: aliceblue;
 }
 nav .navbar-toggler {
-  border-color: aliceblue;
+  border-style: none;
+}
+nav .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='aliceblue' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 nav .brand-name {
   margin-left: 10px;
@@ -12002,8 +12006,7 @@ nav .brand-name {
 .portfolio-section,
 .about-section,
 .contacts-section {
-  height: 800px;
-  padding-top: 60px;
+  min-height: 100vh;
 }
 
 .home-section {
@@ -12020,4 +12023,21 @@ nav .brand-name {
 
 .contacts-section {
   background-color: #8b8589;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 601px) and (max-width: 768px) {
+  nav p {
+    font-size: 18px;
+  }
+}
+@media (min-width: 414px) and (max-width: 600px) {
+  nav p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 413px) {
+  nav p {
+    font-size: 14px;
+  }
 }
