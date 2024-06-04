@@ -11,6 +11,20 @@ body {
     font-family: $fonts;
 }
 
+button,
+input,
+select,
+textarea{
+    font-family: inherit;
+    font-size: 100%;
+    box-sizing: border-box;
+    padding: 0; margin: 0;
+}
+textarea{
+    overflow: auto;
+}
+
+
 /* NAVBAR */
 nav {
     background-color: $primary;
@@ -48,18 +62,18 @@ nav {
 .portfolio-section,
 .about-section,
 .contacts-section {
-    min-height: 100vh; 
+    min-height: 100vh;
 }
 
 .home-section {
     background-color: $secondary;
 }
 
-.portfolio-section {
+.about-section {
     background-color: $third;
 }
 
-.about-section {
+.portfolio-section {
     background-color: $forth;
 }
 
@@ -70,13 +84,13 @@ nav {
 /* MEDIA QUERIES */
 @media (min-width: 601px) and (max-width: 768px) {
     nav p {
-        font-size: 18px; 
+        font-size: 18px;
     }
 }
 
 @media (min-width: 414px) and (max-width: 600px) {
     nav p {
-        font-size: 16px; 
+        font-size: 16px;
     }
 }
 
@@ -85,3 +99,11 @@ nav {
         font-size: 14px;
     }
 }
+
+/* FORM */
+
+ 
+
+
+
+

@@ -10,7 +10,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {            
+            emailjs.init({
+              publicKey: "nQawPtOpiUp-Xdom-",
+            });
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(() => {
+                        console.log('SUCCESS!');
+                    }, (error) => {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
     <title>AB Game/Web Development</title>
 </head>
 
@@ -33,13 +54,13 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">
-                            <p>Portfolio</p>
+                        <a class="nav-link" href="#about">
+                            <p>About me</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">
-                            <p>About me</p>
+                        <a class="nav-link" href="#portfolio">
+                            <p>Portfolio</p>
                         </a>
                     </li>
                     <li class="nav-item">
@@ -53,10 +74,25 @@
     </nav>
 
     <section id="page-top" class="home-section">Home Section</section>
+    <section id="about" class="about-section">About Section
+        <p>This is the About Me section. <a href="about-me.html">Learn more about me</a>.</p>
+    </section>
     <section id="portfolio" class="portfolio-section">Portfolio Section</section>
-    <section id="about" class="about-section">About Section</section>
-    <section id="contacts" class="contacts-section">Contacts Section</section>
-    
+    <section id="contacts" class="contacts-section">Contacts Section
+        <form id="contact-form">
+            <!-- To simplify the tutorial, the value is static. -->
+            <input type="hidden" name="contact_number" value="697483">
+            <label>Full Name / Society</label>
+            <input type="text" name="user_name">
+            <label>Email</label>
+            <input type="email" name="user_email">
+            <label>Message</label>
+            <textarea name="message"></textarea>
+            <input type="submit" value="Send">
+        </form>
+        
+    </section>
+
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             var navbarToggler = document.querySelector('.navbar-toggler');
@@ -65,7 +101,7 @@
 
             navLinks.forEach(function (link) {
                 link.addEventListener('click', function (event) {
-                    event.preventDefault(); // Prevent default anchor behavior
+                    event.preventDefault();
                     var targetId = this.getAttribute('href');
                     var targetSection = document.querySelector(targetId);
                     var offsetPosition = targetSection.offsetTop - navbar.offsetHeight;
@@ -80,8 +116,9 @@
                     }
                 });
             });
-        });
+        });        
     </script>
+
 </body>
 
 </html>
