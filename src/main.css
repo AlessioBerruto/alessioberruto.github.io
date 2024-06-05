@@ -11990,7 +11990,13 @@ textarea {
   overflow: auto;
 }
 
-/* NAVBAR */
+.home-section,
+.portfolio-section,
+.about-section,
+.contacts-section {
+  min-height: 100vh;
+}
+
 nav {
   background-color: #4c516d;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
@@ -12017,19 +12023,35 @@ nav .brand-name {
   margin-left: 10px;
 }
 
-.home-section,
-.portfolio-section,
-.about-section,
-.contacts-section {
-  min-height: 100vh;
-}
-
 .home-section {
   background-color: #979aaa;
 }
 
 .about-section {
   background-color: #838996;
+}
+.about-section a {
+  color: #4c516d;
+}
+.about-section a:hover {
+  color: #3b3f57;
+}
+
+.card {
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  height: 150px;
+  background-color: aliceblue;
+}
+
+.card-img-top {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 100%;
+  width: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .portfolio-section {
@@ -12040,7 +12062,6 @@ nav .brand-name {
   background-color: #8b8589;
 }
 
-/* MEDIA QUERIES */
 @media (min-width: 601px) and (max-width: 768px) {
   nav p {
     font-size: 18px;
@@ -12054,64 +12075,5 @@ nav .brand-name {
 @media (max-width: 413px) {
   nav p {
     font-size: 14px;
-  }
-}
-/* FORM */
-form {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-}
-
-fieldset {
-  border: none;
-  margin-bottom: 10px;
-  display: flex;
-  flex-direction: column;
-}
-
-legend {
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-input, textarea {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-.full-width {
-  grid-column: span 2; /* L'input requests e il bottone occupano entrambe le colonne */
-}
-
-button {
-  padding: 10px 15px;
-  background-color: #4c516d;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #40455f;
-}
-
-/* Media query per schermi più piccoli */
-@media (max-width: 768px) {
-  form {
-    grid-template-columns: 1fr;
-  }
-  .full-width {
-    grid-column: span 1; /* Ritorna a una colonna singola per schermi più piccoli */
   }
 }

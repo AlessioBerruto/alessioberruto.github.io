@@ -8,13 +8,18 @@
     <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- EMAILJS SCRIPT-->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">
-        (function() {            
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
             emailjs.init({
-              publicKey: "nQawPtOpiUp-Xdom-",
+              publicKey: "bMOpUWBSnYE6ynS4K",
             });
         })();
     </script>
@@ -25,25 +30,29 @@
                 // these IDs from the previous steps
                 emailjs.sendForm('contact_service', 'contact_form', this)
                     .then(() => {
-                        console.log('SUCCESS!');
+                        alert('SUCCESS!');
                     }, (error) => {
-                        console.log('FAILED...', error);
+                        alert('FAILED...', error);
                     });
             });
         }
     </script>
+
     <title>AB Game/Web Development</title>
 </head>
 
 <body id="page-top">
 
+    <!-- NAVBAR -->
     <nav class="navbar sticky-top navbar-expand-lg navbar-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#page-top">
-                <img src="../images/AB-icon.png" alt="AB Brand" width="30" height="24" class="d-inline-block align-text-top">
+                <img src="../images/AB-icon.png" alt="AB Brand" width="30" height="24"
+                    class="d-inline-block align-text-top">
                 <p class="brand-name">AB Development</p>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -73,26 +82,65 @@
         </div>
     </nav>
 
+    <!-- HOME SECTION -->
     <section id="page-top" class="home-section">Home Section</section>
+
+    <!-- ABOUT SECTION -->
     <section id="about" class="about-section">About Section
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-4 col-md-3 col-lg-2">
+                    <div class="card mb-3 p-2">
+                        <img src="../images/HTML5_logo_and_wordmark.svg" class="card-img-top img-fluid"
+                            alt="HTML5 logo">
+                    </div>
+                </div>
+                <div class="col-4 col-sm-4 col-md-3 col-lg-2">
+                    <div class="card mb-3 p-2">
+                        <img src="../images/CSS3_logo_and_wordmark.svg" class="card-img-top img-fluid" alt="CSS3 logo">
+                    </div>
+                </div>
+                <div class="col-4 col-sm-4 col-md-3 col-lg-2">
+                    <div class="card mb-3 p-2">
+                        <img src="../images/Bootstrap_logo.svg" class="card-img-top img-fluid" alt="Bootstrap logo">
+                    </div>
+                </div>
+                <div class="col-4 col-sm-4 col-md-3 col-lg-2">
+                    <div class="card mb-3 p-2">
+                        <img src="../images/Sass_Logo_Color.svg" class="card-img-top img-fluid" alt="SASS logo">
+                    </div>
+                </div>
+                <div class="col-4 col-sm-4 col-md-3 col-lg-2">
+                    <div class="card mb-3 p-2">
+                        <img src="../images/Visual_Studio_Icon_2022.svg" class="card-img-top img-fluid"
+                            alt="Visual Studio logo">
+                    </div>
+                </div>
+            </div>
+        </div>
         <p>This is the About Me section. <a href="about-me.html">Learn more about me</a>.</p>
     </section>
+
+    <!-- PORTFOLIO SECTION -->
     <section id="portfolio" class="portfolio-section">Portfolio Section</section>
+
+    <!-- CONTACT SECTION -->
     <section id="contacts" class="contacts-section">Contacts Section
         <form id="contact-form">
             <!-- To simplify the tutorial, the value is static. -->
             <input type="hidden" name="contact_number" value="697483">
-            <label>Full Name / Society</label>
-            <input type="text" name="user_name">
+            <label>Name</label>
+            <input type="text" name="user_name" required>
             <label>Email</label>
-            <input type="email" name="user_email">
+            <input type="email" name="user_email" required>
             <label>Message</label>
             <textarea name="message"></textarea>
             <input type="submit" value="Send">
         </form>
-        
     </section>
 
+
+    <!-- NAVBAR SCRIPT -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             var navbarToggler = document.querySelector('.navbar-toggler');
@@ -117,7 +165,7 @@
                 });
             });
         });        
-    </script>
+    </script>      
 
 </body>
 

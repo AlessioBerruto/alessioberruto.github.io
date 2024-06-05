@@ -1,6 +1,7 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import "./variables";
 
+// GENERAL STYLING
 * {
     margin: 0;
     padding: 0;
@@ -24,8 +25,14 @@ textarea{
     overflow: auto;
 }
 
+.home-section,
+.portfolio-section,
+.about-section,
+.contacts-section {
+    min-height: 100vh;
+}
 
-/* NAVBAR */
+// NAVBAR
 nav {
     background-color: $primary;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
@@ -58,30 +65,51 @@ nav {
     }
 }
 
-.home-section,
-.portfolio-section,
-.about-section,
-.contacts-section {
-    min-height: 100vh;
-}
-
+// HOME SECTION
 .home-section {
     background-color: $secondary;
 }
 
+// ABOUT SECTION
 .about-section {
     background-color: $third;
+
+    a{
+        color: $primary;
+    }
+
+    a:hover{
+        color:#3b3f57;
+    }
 }
 
+.card {
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    height: 150px;  
+    background-color: aliceblue;  
+}
+
+.card-img-top {
+    object-fit: contain; 
+    height: 100%; 
+    width: auto; 
+    display: block; 
+    margin: 0 auto;
+}
+
+// PORTFOLIO SECTION
 .portfolio-section {
     background-color: $forth;
 }
 
+// CONTACT SECTION
 .contacts-section {
     background-color: $fifth;
 }
 
-/* MEDIA QUERIES */
+// MEDIA QUERIES
 @media (min-width: 601px) and (max-width: 768px) {
     nav p {
         font-size: 18px;
@@ -100,7 +128,7 @@ nav {
     }
 }
 
-/* FORM */
+// FORM
 
  
 
