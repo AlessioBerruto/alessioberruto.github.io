@@ -10,18 +10,21 @@
 
 body {
     font-family: $fonts;
+    font-size: 20px;
 }
 
 button,
 input,
 select,
-textarea{
+textarea {
     font-family: inherit;
     font-size: 100%;
     box-sizing: border-box;
-    padding: 0; margin: 0;
+    padding: 0;
+    margin: 0;
 }
-textarea{
+
+textarea {
     overflow: auto;
 }
 
@@ -30,7 +33,15 @@ textarea{
 .about-section,
 .contacts-section {
     min-height: 100vh;
+    text-align: center;
 }
+
+.section-title {
+    padding-top: 40px;
+    font-size: 50px;
+
+}
+
 
 // NAVBAR
 nav {
@@ -73,29 +84,52 @@ nav {
 // ABOUT SECTION
 .about-section {
     background-color: $third;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-    a{
+    a {
+        color: black;
+    }
+
+    a:hover {
         color: $primary;
     }
 
-    a:hover{
-        color:#3b3f57;
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;        
+        height: 100%;
     }
 }
 
-.card {
+.card-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start; 
     width: 100%;
+    margin-top: 20px;
+}
+
+.card {    
+    max-width: 150px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    height: 150px;  
-    background-color: aliceblue;  
+    height: 150px;
+    background-color: aliceblue;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .card-img-top {
-    object-fit: contain; 
-    height: 100%; 
-    width: auto; 
-    display: block; 
+    object-fit: contain;
+    height: 100%;
+    width: auto;
+    display: block;
     margin: 0 auto;
 }
 
@@ -107,31 +141,134 @@ nav {
 // CONTACT SECTION
 .contacts-section {
     background-color: $fifth;
+
+    .contact-description,
+    .link-column {
+        word-wrap: break-word;
+        margin-top: 25px;
+    }
+
 }
 
-// MEDIA QUERIES
-@media (min-width: 601px) and (max-width: 768px) {
-    nav p {
-        font-size: 18px;
+// CONTACT DESCRIPTION
+.contact-column {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 40px 0 -30px;
+
+}
+
+.contact-description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+// FORM
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin-top: 20px;
+
+
+    textarea {
+        height: 100px;
+    }
+
+    p {
+        margin-bottom: 0;
     }
 }
 
+#contact-form label {
+    margin-top: 5px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    border: 1px solid aliceblue;
+    border-radius: 4px;
+}
+
+#contact-form input {
+    border: none;
+}
+
+.send-button {
+    background-color: $brand-color;
+    color: aliceblue;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.send-button:hover {
+    background-color: #006acd;
+}
+
+// LINK COLUMN
+
+.link-column {
+    display: flex;
+    flex-direction: column;
+    margin: 0px -10px 0 40px;
+
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.social-link img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.social-link a {
+    color: black;
+}
+
+.social-link a:hover {
+    color: $primary;
+}
+
+
+// MEDIA QUERIES
+@media (min-width: 601px) and (max-width: 768px) {
+
+    nav p,
+    .contacts-section p,
+    .social-link a {
+        font-size: 18px;
+    }
+
+}
+
 @media (min-width: 414px) and (max-width: 600px) {
-    nav p {
+
+    nav p,
+    .contacts-section p,
+    .social-link a {
         font-size: 16px;
     }
 }
 
 @media (max-width: 413px) {
-    nav p {
+
+    nav p,
+    .contacts-section p,
+    .social-link a {
         font-size: 14px;
     }
+
 }
-
-// FORM
-
- 
-
-
-
-

@@ -16,26 +16,53 @@
     <!-- EMAILJS SCRIPT-->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">
-        (function() {
+        (function () {
             // https://dashboard.emailjs.com/admin/account
             emailjs.init({
-              publicKey: "bMOpUWBSnYE6ynS4K",
+                publicKey: "bMOpUWBSnYE6ynS4K",
             });
         })();
     </script>
     <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
+        window.onload = function () {
+            document.getElementById('contact-form').addEventListener('submit', function (event) {
                 event.preventDefault();
                 // these IDs from the previous steps
                 emailjs.sendForm('contact_service', 'contact_form', this)
                     .then(() => {
-                        alert('SUCCESS!');
+                        alert('MESSAGE SENT!');
                     }, (error) => {
                         alert('FAILED...', error);
                     });
             });
         }
+    </script>
+
+    <!-- NAVBAR SCRIPT -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var navbarToggler = document.querySelector('.navbar-toggler');
+            var navLinks = document.querySelectorAll('.nav-link');
+            var navbar = document.querySelector('.navbar');
+
+            navLinks.forEach(function (link) {
+                link.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    var targetId = this.getAttribute('href');
+                    var targetSection = document.querySelector(targetId);
+                    var offsetPosition = targetSection.offsetTop - navbar.offsetHeight;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+
+                    if (window.getComputedStyle(navbarToggler).display !== 'none') {
+                        navbarToggler.click();
+                    }
+                });
+            });
+        });        
     </script>
 
     <title>AB Game/Web Development</title>
@@ -86,86 +113,103 @@
     <section id="page-top" class="home-section">Home Section</section>
 
     <!-- ABOUT SECTION -->
-    <section id="about" class="about-section">About Section
+    <section id="about" class="about-section">
+        <h1 class="section-title">ABOUT ME</h1>
+        <p>This is the About Me section. <a href="about-me.html" target="_blank">Learn more about me</a>.</p>
+        <div class="container">
+            <div class="row card-row">
+                <div class="card mb-3 p-2">
+                    <img src="../images/HTML5_logo_and_wordmark.svg" class="card-img-top img-fluid" alt="HTML5 logo">
+                </div>
+                <div class="card mb-3 p-2">
+                    <img src="../images/CSS3_logo_and_wordmark.svg" class="card-img-top img-fluid" alt="CSS3 logo">
+                </div>
+                <div class="card mb-3 p-2">
+                    <img src="../images/Bootstrap_logo.svg" class="card-img-top img-fluid" alt="Bootstrap logo">
+                </div>
+                <div class="card mb-3 p-2">
+                    <img src="../images/Sass_Logo_Color.svg" class="card-img-top img-fluid" alt="SASS logo">
+                </div>
+                <div class="card mb-3 p-2">
+                    <img src="../images/Visual_Studio_Icon_2022.svg" class="card-img-top img-fluid"
+                        alt="Visual Studio logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- PORTFOLIO SECTION -->
+    <section id="portfolio" class="portfolio-section">
+        <h1 class="section-title">PORTFOLIO</h1>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contacts" class="contacts-section">
+        <h1 class="section-title">CONTACTS</h1>
         <div class="container">
             <div class="row">
-                <div class="col-4 col-sm-4 col-md-3 col-lg-2">
-                    <div class="card mb-3 p-2">
-                        <img src="../images/HTML5_logo_and_wordmark.svg" class="card-img-top img-fluid"
-                            alt="HTML5 logo">
+                <div class="col-sm-6 col-md-6 col-lg-4">
+                    <div class="row contact-column">
+                        <div class="contact-description">
+                            <h4>Contact me:</h4>
+                        </div>
+                        <div class="contact-description">
+                            <p>descrizione</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-4 col-sm-4 col-md-3 col-lg-2">
-                    <div class="card mb-3 p-2">
-                        <img src="../images/CSS3_logo_and_wordmark.svg" class="card-img-top img-fluid" alt="CSS3 logo">
-                    </div>
+
+                <div class="col-sm-6 col-md-6 col-lg-4">
+                    <form id="contact-form">
+                        <!-- To simplify the tutorial, the value is static. -->
+                        <input type="hidden" name="contact_number" value="697483">
+                        <label>
+                            <p>Full Name / Society *</p>
+                        </label>
+                        <input type="text" name="user_name" required>
+                        <label>
+                            <p>Email *</p>
+                        </label>
+                        <input type="email" name="user_email" required>
+                        <label>
+                            <p>Message</p>
+                        </label>
+                        <textarea name="message"></textarea>
+                        <input type="submit" value="Send" class="send-button">
+                    </form>
                 </div>
-                <div class="col-4 col-sm-4 col-md-3 col-lg-2">
-                    <div class="card mb-3 p-2">
-                        <img src="../images/Bootstrap_logo.svg" class="card-img-top img-fluid" alt="Bootstrap logo">
-                    </div>
-                </div>
-                <div class="col-4 col-sm-4 col-md-3 col-lg-2">
-                    <div class="card mb-3 p-2">
-                        <img src="../images/Sass_Logo_Color.svg" class="card-img-top img-fluid" alt="SASS logo">
-                    </div>
-                </div>
-                <div class="col-4 col-sm-4 col-md-3 col-lg-2">
-                    <div class="card mb-3 p-2">
-                        <img src="../images/Visual_Studio_Icon_2022.svg" class="card-img-top img-fluid"
-                            alt="Visual Studio logo">
+
+                <div class="col-sm-12 col-md-12 col-lg-4">
+                    <div class="row link-column">
+                        <div class="social-link">
+                            <h4>Social pages:</h4>
+                        </div>
+                        <div class="social-link">
+                            <img src="../images/LinkedIn_icon.svg" alt="LinkedIn Logo">
+                            <a href="https://www.linkedin.com/in/alessio-berruto-0439992a4/"
+                                target="_blank">LinkedIn</a>
+                        </div>
+                        <div class="social-link">
+                            <img src="../images/Instagram_logo_2016.svg" alt="Instagram Logo">
+                            <a href="https://www.instagram.com/berrutoalessio/" target="_blank">Instagram</a>
+                        </div>
+                        <div class="social-link">
+                            <img src="../images/Facebook_icon.svg" alt="Facebook Logo">
+                            <a href="https://www.facebook.com/profile.php?id=100077533711598&locale=it_IT"
+                                target="_blank">Facebook</a>
+                        </div>
+                        <div class="social-link">
+                            <img src="../images/Octicons-mark-github.svg" alt="GitHub Logo">
+                            <a href="https://github.com/AlessioBerruto" target="_blank">GitHub</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <p>This is the About Me section. <a href="about-me.html">Learn more about me</a>.</p>
     </section>
 
-    <!-- PORTFOLIO SECTION -->
-    <section id="portfolio" class="portfolio-section">Portfolio Section</section>
-
-    <!-- CONTACT SECTION -->
-    <section id="contacts" class="contacts-section">Contacts Section
-        <form id="contact-form">
-            <!-- To simplify the tutorial, the value is static. -->
-            <input type="hidden" name="contact_number" value="697483">
-            <label>Name</label>
-            <input type="text" name="user_name" required>
-            <label>Email</label>
-            <input type="email" name="user_email" required>
-            <label>Message</label>
-            <textarea name="message"></textarea>
-            <input type="submit" value="Send">
-        </form>
-    </section>
-
-
-    <!-- NAVBAR SCRIPT -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var navbarToggler = document.querySelector('.navbar-toggler');
-            var navLinks = document.querySelectorAll('.nav-link');
-            var navbar = document.querySelector('.navbar');
-
-            navLinks.forEach(function (link) {
-                link.addEventListener('click', function (event) {
-                    event.preventDefault();
-                    var targetId = this.getAttribute('href');
-                    var targetSection = document.querySelector(targetId);
-                    var offsetPosition = targetSection.offsetTop - navbar.offsetHeight;
-
-                    window.scrollTo({
-                        top: offsetPosition,
-                        behavior: 'smooth'
-                    });
-
-                    if (window.getComputedStyle(navbarToggler).display !== 'none') {
-                        navbarToggler.click();
-                    }
-                });
-            });
-        });        
-    </script>      
 
 </body>
 
