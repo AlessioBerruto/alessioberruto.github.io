@@ -110,29 +110,72 @@
     </nav>
 
     <!-- HOME SECTION -->
-    <section id="page-top" class="home-section">Home Section</section>
+    <section id="page-top" class="home-section">
+        <div class="row home-row">
+            <div class="col-7 col-sm-6 col-md-4">
+                <div class="image-container">
+                    <img src="../images/photo.jpg" alt="My picture">
+                </div>
+            </div>
+            <div class="col-7 col-sm-12 col-md-4">
+                <div class="name-container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class="section-title">BERRUTO ALESSIO</h1>
+                        </div>
+                        <div class="col-12">
+                            <h4 class="section-text">Game / Web Development</h4>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-7 col-sm-6 col-md-4">
+                <div class="video-container">
+                    <video autoplay muted loop class="background-video">
+                        <source src="../video/Screens.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- ABOUT SECTION -->
     <section id="about" class="about-section">
         <h1 class="section-title">ABOUT ME</h1>
-        <p>This is the About Me section. <a href="about-me.html" target="_blank">Learn more about me</a>.</p>
+        <p class="section-text">This is the About Me section. <br><a href="about-me.html" target="_blank">Learn more about
+                me</a></p>
+        <h3>PROGRAMMING SKILLS</h3>
         <div class="container">
             <div class="row card-row">
-                <div class="card mb-3 p-2">
-                    <img src="../images/HTML5_logo_and_wordmark.svg" class="card-img-top img-fluid" alt="HTML5 logo">
+                <div class="col-5 col-sm-4 col-md-3 col-lg-2">
+                    <div class="card mb-3 p-2">
+                        <img src="../images/HTML5_logo_and_wordmark.svg" class="card-img-top img-fluid"
+                            alt="HTML5 logo">
+                    </div>
                 </div>
-                <div class="card mb-3 p-2">
-                    <img src="../images/CSS3_logo_and_wordmark.svg" class="card-img-top img-fluid" alt="CSS3 logo">
+                <div class="col-5 col-sm-4 col-md-3 col-lg-2">
+                    <div class="card mb-3 p-2">
+                        <img src="../images/CSS3_logo_and_wordmark.svg" class="card-img-top img-fluid" alt="CSS3 logo">
+                    </div>
                 </div>
-                <div class="card mb-3 p-2">
-                    <img src="../images/Bootstrap_logo.svg" class="card-img-top img-fluid" alt="Bootstrap logo">
+                <div class="col-5 col-sm-4 col-md-3 col-lg-2">
+                    <div class="card mb-3 p-2">
+                        <img src="../images/Bootstrap_logo.svg" class="card-img-top img-fluid" alt="Bootstrap logo">
+                    </div>
                 </div>
-                <div class="card mb-3 p-2">
-                    <img src="../images/Sass_Logo_Color.svg" class="card-img-top img-fluid" alt="SASS logo">
+                <div class="col-5 col-sm-4 col-md-3 col-lg-2">
+                    <div class="card mb-3 p-2">
+                        <img src="../images/Sass_Logo_Color.svg" class="card-img-top img-fluid" alt="SASS logo">
+                    </div>
                 </div>
-                <div class="card mb-3 p-2">
-                    <img src="../images/Visual_Studio_Icon_2022.svg" class="card-img-top img-fluid"
-                        alt="Visual Studio logo">
+                <div class="col-5 col-sm-4 col-md-3 col-lg-2">
+                    <div class="card mb-3 p-2">
+                        <img src="../images/Visual_Studio_Icon_2022.svg" class="card-img-top img-fluid"
+                            alt="Visual Studio logo">
+                    </div>
                 </div>
             </div>
         </div>
@@ -140,9 +183,30 @@
 
 
 
+
     <!-- PORTFOLIO SECTION -->
     <section id="portfolio" class="portfolio-section">
         <h1 class="section-title">PORTFOLIO</h1>
+        <p class="section-text">"I'm currently working on two different projects, and I'm considering a third one"</p>
+        <div class="container">
+            <div class="row card-row">
+                <div class="col-7 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card mb-3 p-2">
+                        <img src="../images/Java_Logo.svg" class="card-img-top img-fluid" alt="Java logo">
+                    </div>
+                </div>
+                <div class="col-7 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card mb-3 p-2">
+                        <img src="../images/internet-svgrepo-com.svg" class="card-img-top img-fluid" alt="Website logo">
+                    </div>
+                </div>
+                <div class="col-7 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card mb-3 p-2">
+                        <img src="../images/Question_Mark.svg" class="card-img-top img-fluid" alt="Question mark logo">
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- CONTACT SECTION -->
@@ -156,7 +220,8 @@
                             <h4>Contact me:</h4>
                         </div>
                         <div class="contact-description">
-                            <p>descrizione</p>
+                            <p>"If you would like to contact me to propose an idea or a project, please fill out the
+                                form or visit my social media pages"</p>
                         </div>
                     </div>
                 </div>
@@ -186,23 +251,25 @@
                         <div class="social-link">
                             <h4>Social pages:</h4>
                         </div>
-                        <div class="social-link">
-                            <img src="../images/LinkedIn_icon.svg" alt="LinkedIn Logo">
-                            <a href="https://www.linkedin.com/in/alessio-berruto-0439992a4/"
-                                target="_blank">LinkedIn</a>
-                        </div>
-                        <div class="social-link">
-                            <img src="../images/Instagram_logo_2016.svg" alt="Instagram Logo">
-                            <a href="https://www.instagram.com/berrutoalessio/" target="_blank">Instagram</a>
-                        </div>
-                        <div class="social-link">
-                            <img src="../images/Facebook_icon.svg" alt="Facebook Logo">
-                            <a href="https://www.facebook.com/profile.php?id=100077533711598&locale=it_IT"
-                                target="_blank">Facebook</a>
-                        </div>
-                        <div class="social-link">
-                            <img src="../images/Octicons-mark-github.svg" alt="GitHub Logo">
-                            <a href="https://github.com/AlessioBerruto" target="_blank">GitHub</a>
+                        <div class="row">
+                            <div class="col-6 col-lg-12 social-link">
+                                <img src="../images/LinkedIn_icon.svg" alt="LinkedIn Logo">
+                                <a href="https://www.linkedin.com/in/alessio-berruto-0439992a4/"
+                                    target="_blank">LinkedIn</a>
+                            </div>
+                            <div class="col-6 col-lg-12 social-link">
+                                <img src="../images/Instagram_logo_2016.svg" alt="Instagram Logo">
+                                <a href="https://www.instagram.com/berrutoalessio/" target="_blank">Instagram</a>
+                            </div>
+                            <div class="col-6 col-lg-12 social-link">
+                                <img src="../images/Facebook_icon.svg" alt="Facebook Logo">
+                                <a href="https://www.facebook.com/profile.php?id=100077533711598&locale=it_IT"
+                                    target="_blank">Facebook</a>
+                            </div>
+                            <div class="col-6 col-lg-12 social-link">
+                                <img src="../images/Octicons-mark-github.svg" alt="GitHub Logo">
+                                <a href="https://github.com/AlessioBerruto" target="_blank">GitHub</a>
+                            </div>
                         </div>
                     </div>
                 </div>
