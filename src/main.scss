@@ -129,15 +129,13 @@ nav {
 .video-container {
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: auto;   
-    margin-top: 20px;   
+    justify-content: center;      
+      
 }
 
 .background-video {
-    width: auto;
-    max-height: 250px;
-    height: 100%;
+    max-width: 100%;
+    height: auto;
     object-fit: contain;
     border-radius: 5px;
     border: 2px solid black;
@@ -200,18 +198,14 @@ nav {
     background-color: $forth;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-
-    .card-body {
-        border: 2px solid aliceblue;
-    }
+    justify-content: center;    
 
     .card {
         height: 200px;
     }
 
     .card-img-top {
-        opacity: 0.3;
+        opacity: 0.5;
     }
 }
 
@@ -369,6 +363,10 @@ nav {
         }
     }
 
+    .video-container {
+        padding-top: 20px;
+    }
+
     .social-link,
     .link-column,
     .contact-column {
@@ -406,9 +404,21 @@ nav {
         margin: 10px 0;
     }
 
-    .background-video {
-        max-height: 200px;
+    .video-container {
+        padding-top: 20px;
     }
+
+    .name-container {
+        h4 {
+            margin-bottom: 20px;
+        }
+    }
+
+    .portfolio-section p {
+        padding-top: 25px;
+        padding-bottom: 15px;
+    }
+
 
 }
 
@@ -442,17 +452,21 @@ nav {
     .contact-column {
         margin: 10px 0;
     }
+    
+    .video-container {
+        padding-top: 20px;
+    }
 
-    .background-video {
-        max-height: 180px;
+    .name-container {
+        h4 {
+            margin-bottom: 20px;
+        }
+    }
+
+    .portfolio-section p {
+        padding-top: 25px;
+        padding-bottom: 15px;
     }
 
 }
 
-@media (max-width: 300px) {    
-
-    .background-video {
-        max-height: 130px;
-    }
-
-}

@@ -12074,14 +12074,11 @@ nav .brand-name {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: auto;
-  margin-top: 20px;
 }
 
 .background-video {
-  width: auto;
-  max-height: 250px;
-  height: 100%;
+  max-width: 100%;
+  height: auto;
   -o-object-fit: contain;
      object-fit: contain;
   border-radius: 5px;
@@ -12140,14 +12137,11 @@ nav .brand-name {
   flex-direction: column;
   justify-content: center;
 }
-.portfolio-section .card-body {
-  border: 2px solid aliceblue;
-}
 .portfolio-section .card {
   height: 200px;
 }
 .portfolio-section .card-img-top {
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 .contacts-section {
@@ -12272,6 +12266,9 @@ nav .brand-name {
   body .about-section h3, body .about-section .h3 {
     font-size: 20px;
   }
+  .video-container {
+    padding-top: 20px;
+  }
   .social-link,
   .link-column,
   .contact-column {
@@ -12299,8 +12296,15 @@ nav .brand-name {
   .contact-column {
     margin: 10px 0;
   }
-  .background-video {
-    max-height: 200px;
+  .video-container {
+    padding-top: 20px;
+  }
+  .name-container h4, .name-container .h4 {
+    margin-bottom: 20px;
+  }
+  .portfolio-section p {
+    padding-top: 25px;
+    padding-bottom: 15px;
   }
 }
 @media (max-width: 413px) {
@@ -12324,12 +12328,14 @@ nav .brand-name {
   .contact-column {
     margin: 10px 0;
   }
-  .background-video {
-    max-height: 180px;
+  .video-container {
+    padding-top: 20px;
   }
-}
-@media (max-width: 300px) {
-  .background-video {
-    max-height: 130px;
+  .name-container h4, .name-container .h4 {
+    margin-bottom: 20px;
+  }
+  .portfolio-section p {
+    padding-top: 25px;
+    padding-bottom: 15px;
   }
 }
