@@ -11,6 +11,7 @@
 body {
     font-family: $fonts;
     font-size: 20px;
+    overflow-x: hidden;
 
     a {
         color: black;
@@ -42,6 +43,7 @@ body {
         min-height: 100vh;
         text-align: center;
         padding: 10px;
+        overflow-x: hidden;
     }
 
     .section-title {
@@ -306,6 +308,77 @@ nav {
 }
 
 
+// CV STYLES
+
+.cv-section {
+    padding: 30px 20px;
+    background-color: $third;
+}
+
+.cv-section .cv-container {
+    max-width: 800px;
+    background-color: aliceblue;
+    margin: 0 auto;        
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cv-content {
+    padding: 0 20px;
+}
+
+.cv-title {
+    font-size: 2.5rem;    
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.cv-header {
+    text-align: center;    
+    background-color: $brand-color;
+    color: aliceblue;
+    padding: 20px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+
+}
+
+.cv-content {
+    h3 {
+        color: $primary;
+        border-bottom: 2px solid $primary;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+        margin-top: 25px;
+    }
+
+    p, ul {
+        margin: 0 0 10px;
+    }
+
+    ul {
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+
+footer {
+    background-color: $primary;
+    text-align: center;
+    padding: 10px;
+
+    a {
+        color: aliceblue;
+        text-decoration: none;        
+    }
+
+    a:hover {
+        color: aliceblue;
+        text-decoration: underline;
+    }
+}
+
 // MEDIA QUERIES
 @media (min-width: 769px) and (max-width: 992px) {
 
@@ -315,13 +388,21 @@ nav {
     .about-section p,
     .portfolio-section p,    
     .contact-description p,
-    .social-link a {
+    .social-link a,
+    .cv-content p,
+    .cv-content ul,
+    .cv-header p,
+    footer {
         font-size: 18px;
     }
 
     body {
         .section-title {
             font-size: 45px;
+        }
+
+        .cv-title {
+            font-size: 35px;
         }
 
         .about-section {
@@ -347,13 +428,21 @@ nav {
     .about-section p,
     .portfolio-section p,    
     .contact-description p,
-    .social-link a {
+    .social-link a,
+    .cv-content p,
+    .cv-content ul,
+    .cv-header p,
+    footer {
         font-size: 16px;
     }
 
     body {
         .section-title {
             font-size: 40px;
+        }
+
+        .cv-title {
+            font-size: 32px;
         }
 
         .about-section {
@@ -382,13 +471,21 @@ nav {
     .about-section p,
     .portfolio-section p,    
     .contact-description p,
-    .social-link a {
+    .social-link a,
+    .cv-content p,
+    .cv-content ul,
+    .cv-header p,
+    footer {
         font-size: 15px;
     }
 
     body {
         .section-title {
             font-size: 35px;
+        }
+
+        .cv-title {
+            font-size: 30px;
         }
 
         .about-section {
@@ -430,12 +527,20 @@ nav {
     .about-section p,
     .portfolio-section p,    
     .contact-description p,
-    .social-link a {
+    .social-link a,
+    .cv-content p,
+    .cv-content ul,
+    .cv-header p,
+    footer {
         font-size: 15px;
     }
 
     body {
         .section-title {
+            font-size: 30px;
+        }
+        
+        .cv-title {
             font-size: 30px;
         }
 
@@ -468,5 +573,6 @@ nav {
         padding-bottom: 15px;
     }
 
+    
 }
 
