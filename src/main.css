@@ -11965,80 +11965,6 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Ubuntu", Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  overflow-x: hidden;
-}
-body a {
-  color: black;
-}
-body a:hover {
-  color: #4c516d;
-}
-body button,
-body input,
-body select,
-body textarea {
-  font-family: inherit;
-  font-size: 100%;
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-body textarea {
-  overflow: auto;
-}
-body .home-section,
-body .portfolio-section,
-body .about-section,
-body .contacts-section {
-  min-height: 100vh;
-  text-align: center;
-  padding: 10px;
-  overflow-x: hidden;
-}
-body .section-title {
-  padding-top: 40px;
-  font-size: 50px;
-}
-body .section-text {
-  padding-top: 50px;
-  color: aliceblue;
-}
-
-nav {
-  background-color: #4c516d;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-}
-nav img {
-  margin-top: -2px;
-}
-nav li {
-  margin-right: 10px;
-}
-nav p {
-  display: inline;
-  font-weight: 400;
-  font-size: 22px;
-  color: aliceblue;
-}
-nav .navbar-toggler {
-  border-style: none;
-}
-nav .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='aliceblue' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
-nav .brand-name {
-  margin-left: 10px;
-}
-
 .home-section {
   background-color: #979aaa;
   display: flex;
@@ -12065,17 +11991,12 @@ nav .brand-name {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.name-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
+.name-container,
 .video-container {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .background-video {
@@ -12180,11 +12101,9 @@ nav .brand-name {
 #contact-form p {
   margin-bottom: 0;
 }
-
 #contact-form label {
   margin-top: 5px;
 }
-
 #contact-form input,
 #contact-form textarea {
   width: 100%;
@@ -12194,7 +12113,6 @@ nav .brand-name {
   border: 1px solid aliceblue;
   border-radius: 4px;
 }
-
 #contact-form input {
   border: none;
 }
@@ -12223,7 +12141,6 @@ nav .brand-name {
   justify-content: center;
   margin: 20px 0;
 }
-
 .social-link img {
   width: 40px;
   height: auto;
@@ -12234,7 +12151,6 @@ nav .brand-name {
   padding: 30px 20px;
   background-color: #838996;
 }
-
 .cv-section .cv-container {
   max-width: 800px;
   background-color: aliceblue;
@@ -12242,18 +12158,27 @@ nav .brand-name {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-.cv-content {
+.cv-section .cv-content {
   padding: 0 20px;
 }
-
-.cv-title {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  margin-top: 10px;
+.cv-section .cv-content h3, .cv-section .cv-content .h3 {
+  color: #4c516d;
+  border-bottom: 2px solid #4c516d;
+  padding-bottom: 5px;
+  margin: 25px 0 10px;
 }
-
-.cv-header {
+.cv-section .cv-content p, .cv-section .cv-content ul {
+  margin-bottom: 10px;
+}
+.cv-section .cv-content ul {
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+.cv-section .cv-title {
+  font-size: 2.5rem;
+  margin: 10px 0 20px;
+}
+.cv-section .cv-header {
   text-align: center;
   background-color: #0084ff;
   color: aliceblue;
@@ -12262,33 +12187,92 @@ nav .brand-name {
   border-top-right-radius: 8px;
 }
 
-.cv-content h3, .cv-content .h3 {
-  color: #4c516d;
-  border-bottom: 2px solid #4c516d;
-  padding-bottom: 5px;
-  margin-bottom: 10px;
-  margin-top: 25px;
-}
-.cv-content p, .cv-content ul {
-  margin: 0 0 10px;
-}
-.cv-content ul {
-  padding-left: 20px;
-  padding-bottom: 20px;
-}
-
 footer {
   background-color: #4c516d;
   text-align: center;
   padding: 10px;
 }
-footer a {
+footer .top-link {
   color: aliceblue;
   text-decoration: none;
 }
-footer a:hover {
+footer .top-link:hover {
   color: aliceblue;
   text-decoration: underline;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  overflow-x: hidden;
+}
+body a {
+  color: black;
+}
+body a:hover {
+  color: #4c516d;
+}
+body button,
+body input,
+body select,
+body textarea {
+  font-family: inherit;
+  font-size: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body textarea {
+  overflow: auto;
+}
+body .home-section,
+body .portfolio-section,
+body .about-section,
+body .contacts-section {
+  min-height: 100vh;
+  text-align: center;
+  padding: 10px;
+  overflow-x: hidden;
+}
+body .section-title {
+  padding-top: 40px;
+  font-size: 50px;
+}
+body .section-text {
+  padding-top: 50px;
+  color: aliceblue;
+}
+
+nav {
+  background-color: #4c516d;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+nav img {
+  margin-top: -2px;
+}
+nav li {
+  margin-right: 10px;
+}
+nav p {
+  display: inline;
+  font-weight: 400;
+  font-size: 22px;
+  color: aliceblue;
+}
+nav .navbar-toggler {
+  border-style: none;
+}
+nav .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='aliceblue' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+nav .brand-name {
+  margin-left: 10px;
 }
 
 @media (min-width: 769px) and (max-width: 992px) {

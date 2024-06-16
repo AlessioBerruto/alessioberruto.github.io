@@ -1,0 +1,210 @@
+// HOME SECTION
+.home-section {
+    background-color: $secondary;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.home-row {
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 100px;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+        border: 2px solid black;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.name-container,
+.video-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.background-video {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 5px;
+    border: 2px solid black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+// ABOUT SECTION
+.about-section {
+    background-color: $third;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h3 {
+        padding-top: 60px;
+    }
+
+    a {
+        color: aliceblue;
+    }
+
+}
+
+// CARDS
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.card-row {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 100px;
+    margin-top: 0;
+}
+
+.card {
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    height: 150px;
+    background-color: aliceblue;
+}
+
+.card-img-top {
+    object-fit: contain;
+    height: 100%;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+// PORTFOLIO SECTION
+.portfolio-section {
+    background-color: $forth;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+
+    .card {
+        height: 200px;
+    }
+
+    .card-img-top {
+        opacity: 0.5;
+    }
+}
+
+
+// CONTACT SECTION
+.contacts-section {
+    background-color: $fifth;
+}
+
+.contact-description,
+.link-column {
+    word-wrap: break-word;
+    margin-top: 25px;
+}
+
+// CONTACT DESCRIPTION
+.contact-column {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 40px 0 -30px;
+
+}
+
+.contact-description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+// FORM
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin-top: 20px;
+
+
+    textarea {
+        height: 100px;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+
+    label {
+        margin-top: 5px;
+    }
+
+    input,
+    textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    border: 1px solid aliceblue;
+    border-radius: 4px;
+    }
+
+    input {
+        border: none;
+    }
+}
+
+.send-button {
+    background-color: $brand-color;
+    color: aliceblue;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.send-button:hover {
+    background-color: #006acd;
+}
+
+// LINK COLUMN
+
+.link-column {
+    display: flex;
+    flex-direction: column;
+    margin: 0px -10px 0 40px;
+
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+
+    img {
+        width: 40px;
+        height: auto;
+        margin-right: 10px;
+    }
+}
+
