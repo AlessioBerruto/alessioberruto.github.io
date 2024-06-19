@@ -12313,39 +12313,41 @@ nav .navbar-toggler-icon {
 nav .brand-name {
   margin-left: 10px;
 }
-nav .nav-home:hover {
-  border: 1px solid aliceblue;
-  border-radius: 4px;
-}
-nav .nav-home:active {
-  background-color: #979aaa;
-  color: #4c516d;
-}
-nav .nav-about:hover {
-  border: 1px solid aliceblue;
-  border-radius: 4px;
-}
-nav .nav-about:active {
-  background-color: #838996;
-  color: #4c516d;
-}
-nav .nav-portfolio:hover {
-  border: 1px solid aliceblue;
-  border-radius: 4px;
-}
-nav .nav-portfolio:active {
-  background-color: #989898;
-  color: #4c516d;
-}
-nav .nav-contacts:hover {
-  border: 1px solid aliceblue;
-  border-radius: 4px;
-}
-nav .nav-contacts:active {
-  background-color: #8b8589;
-  color: #4c516d;
-}
 
+@media (min-width: 993px) {
+  .nav-home:hover {
+    border: 1px solid aliceblue;
+    border-radius: 4px;
+  }
+  .nav-home:active {
+    background-color: #979aaa;
+    color: #4c516d;
+  }
+  .nav-about:hover {
+    border: 1px solid aliceblue;
+    border-radius: 4px;
+  }
+  .nav-about:active {
+    background-color: #838996;
+    color: #4c516d;
+  }
+  .nav-portfolio:hover {
+    border: 1px solid aliceblue;
+    border-radius: 4px;
+  }
+  .nav-portfolio:active {
+    background-color: #989898;
+    color: #4c516d;
+  }
+  .nav-contacts:hover {
+    border: 1px solid aliceblue;
+    border-radius: 4px;
+  }
+  .nav-contacts:active {
+    background-color: #8b8589;
+    color: #4c516d;
+  }
+}
 @media (min-width: 769px) and (max-width: 992px) {
   nav p,
   label p,

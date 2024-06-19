@@ -88,7 +88,11 @@ nav {
     .brand-name {
         margin-left: 10px;
     }
+}
 
+
+// MEDIA QUERIES
+@media (min-width: 993px) {
     .nav-home:hover {           
         border: 1px solid aliceblue;   
         border-radius: 4px;            
@@ -128,12 +132,8 @@ nav {
         background-color: $fifth;
         color: $primary;
     }
-
-
 }
 
-
-// MEDIA QUERIES
 @media (min-width: 769px) and (max-width: 992px) {
 
     nav p,
