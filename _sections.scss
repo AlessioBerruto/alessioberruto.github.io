@@ -17,7 +17,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 
     img {
         max-width: 100%;
@@ -52,6 +52,34 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+
+    .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: aliceblue;
+        border: 1px solid $primary;
+        border-radius: 6px;
+        color: $primary;
+        display: block;
+        font-family: $fonts;
+        font-size: 20px;
+        margin: 10px auto;
+        max-width: 250px;
+        padding: 10px;
+        text-decoration: none;
+
+        transition: all .6s ease;
+    }
+
+    .btn:hover {
+        color: aliceblue;
+    }
+
+    .btm-animation .btn:hover{
+        box-shadow: 0 -10vw 0 $brand-color inset;
+      }
 
     h3 {
         padding-top: 60px;
@@ -101,7 +129,7 @@
     background-color: $forth;
     display: flex;
     flex-direction: column;
-    justify-content: center;    
+    justify-content: center;
 
     .card {
         height: 200px;
@@ -161,12 +189,12 @@
 
     input,
     textarea {
-    width: 100%;
-    padding: 8px;
-    margin-top: 3px;
-    margin-bottom: 10px;
-    border: 1px solid aliceblue;
-    border-radius: 4px;
+        width: 100%;
+        padding: 8px;
+        margin-top: 3px;
+        margin-bottom: 10px;
+        border: 1px solid aliceblue;
+        border-radius: 4px;
     }
 
     input {
@@ -180,11 +208,20 @@
     cursor: pointer;
     padding: 10px;
     margin-top: 20px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
 }
 
 .send-button:hover {
-    background-color: #006acd;
+    background-color: #0069cb;    
 }
+
+.send-button:active { 
+    background-color: #0154a2;    
+    margin-top: 3px;
+    margin-left: 3px;
+    box-shadow: none;
+}
+
 
 // LINK COLUMN
 
@@ -206,5 +243,16 @@
         height: auto;
         margin-right: 10px;
     }
-}
 
+    a {
+        color: black;
+        text-decoration: none;
+        padding: 2px 10px;        
+    }
+
+    a:hover {
+        color: aliceblue;
+        border: 1px solid aliceblue;
+        border-radius: 4px;
+    }
+}

@@ -13,15 +13,7 @@
 body {
     font-family: $fonts;
     font-size: 20px;
-    overflow-x: hidden;
-
-    a {
-        color: black;
-    }
-
-    a:hover {
-        color: $primary;
-    }
+    overflow-x: hidden;    
 
     button,
     input,
@@ -71,8 +63,13 @@ nav {
 
     li {
         margin-right: 10px;
+
+        p {
+            padding: 4px 10px;            
+        }
     }
 
+    
     p {
         display: inline;
         font-weight: 400;
@@ -91,6 +88,48 @@ nav {
     .brand-name {
         margin-left: 10px;
     }
+
+    .nav-home:hover {           
+        border: 1px solid aliceblue;   
+        border-radius: 4px;            
+    }
+
+    .nav-home:active {
+        background-color: $secondary;        
+        color: $primary;
+    }
+
+    .nav-about:hover {
+        border: 1px solid aliceblue;   
+        border-radius: 4px;
+    }
+
+    .nav-about:active {
+        background-color: $third;        
+        color: $primary;
+    }
+
+    .nav-portfolio:hover {
+        border: 1px solid aliceblue;   
+        border-radius: 4px;
+    }
+
+    .nav-portfolio:active {
+        background-color: $forth;        
+        color: $primary;
+    }
+
+    .nav-contacts:hover {
+        border: 1px solid aliceblue;   
+        border-radius: 4px;
+    }
+
+    .nav-contacts:active {
+        background-color: $fifth;
+        color: $primary;
+    }
+
+
 }
 
 
@@ -101,6 +140,7 @@ nav {
     label p,
     .home-section p,
     .about-section p,
+    .about-section .btn,
     .portfolio-section p,    
     .contact-description p,
     .social-link a,
@@ -111,13 +151,14 @@ nav {
         font-size: 18px;
     }
 
+    
     body {
         .section-title {
             font-size: 45px;
         }
 
-        .cv-title {
-            font-size: 35px;
+        .cv-section .cv-title {
+            font-size: 48px;
         }
 
         .about-section {
@@ -141,6 +182,7 @@ nav {
     label p,
     .home-section p,
     .about-section p,
+    .about-section .btn,
     .portfolio-section p,    
     .contact-description p,
     .social-link a,
@@ -156,8 +198,8 @@ nav {
             font-size: 40px;
         }
 
-        .cv-title {
-            font-size: 32px;
+        .cv-section .cv-title {
+            font-size: 45px;
         }
 
         .about-section {
@@ -184,6 +226,7 @@ nav {
     label p,
     .home-section p,
     .about-section p,
+    .about-section .btn,
     .portfolio-section p,    
     .contact-description p,
     .social-link a,
@@ -199,8 +242,8 @@ nav {
             font-size: 35px;
         }
 
-        .cv-title {
-            font-size: 30px;
+        .cv-section .cv-title {
+            font-size: 42px;
         }
 
         .about-section {
@@ -231,7 +274,6 @@ nav {
         padding-bottom: 15px;
     }
 
-
 }
 
 @media (max-width: 413px) {
@@ -240,6 +282,7 @@ nav {
     label p,
     .home-section p,
     .about-section p,
+    .about-section .btn,
     .portfolio-section p,    
     .contact-description p,
     .social-link a,
@@ -255,8 +298,8 @@ nav {
             font-size: 30px;
         }
         
-        .cv-title {
-            font-size: 30px;
+        .cv-section .cv-title {
+            font-size: 40px;
         }
 
         .about-section {
@@ -265,7 +308,7 @@ nav {
             }
         }
         
-    }
+    }    
 
     .social-link,
     .link-column,
