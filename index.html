@@ -8,70 +8,19 @@
     <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-        rel="stylesheet">
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
-    <!-- EMAILJS SCRIPT-->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function () {
-            // https://dashboard.emailjs.com/admin/account
-            emailjs.init({
-                publicKey: "bMOpUWBSnYE6ynS4K",
-            });
-        })();
-    </script>
-    <script type="text/javascript">
-        window.onload = function () {
-            document.getElementById('contact-form').addEventListener('submit', function (event) {
-                event.preventDefault();
-                // these IDs from the previous steps
-                emailjs.sendForm('contact_service', 'contact_form', this)
-                    .then(() => {
-                        alert('MESSAGE SENT!');
-                    }, (error) => {
-                        alert('FAILED...', error);
-                    });
-            });
-        }
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
 
-    <!-- NAVBAR SCRIPT -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var navbarToggler = document.querySelector('.navbar-toggler');
-            var navLinks = document.querySelectorAll('.nav-link');
-            var navbar = document.querySelector('.navbar');
-
-            navLinks.forEach(function (link) {
-                link.addEventListener('click', function (event) {
-                    event.preventDefault();
-                    var targetId = this.getAttribute('href');
-                    var targetSection = document.querySelector(targetId);
-                    var offsetPosition = targetSection.offsetTop - navbar.offsetHeight;
-
-                    window.scrollTo({
-                        top: offsetPosition,
-                        behavior: 'smooth'
-                    });
-
-                    if (window.getComputedStyle(navbarToggler).display !== 'none') {
-                        navbarToggler.click();
-                    }
-                });
-            });
-        });        
-    </script>
-
-    <title>AB Game/Web Development</title>
+    <!-- OPEN GRAPH TAG -->
     <meta property="og:title" content="AB Game/Web Development">
     <meta property="og:description" content="My personal Game/Web Development site">
     <meta property="og:image" content="https://imgur.com/a/yGMMKra">
     <meta property="og:url" content="https://alessioberruto.github.io/">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="AB Game/Web Development">
+
+    <title>AB Game/Web Development</title>
 </head>
 
 <body id="page-top">
@@ -151,15 +100,15 @@
     <!-- ABOUT SECTION -->
     <section id="about" class="about-section">
         <h1 class="section-title">ABOUT ME</h1>
-        <p class="section-text">"I'm a person with lots of ideas and a desire to learn, problem-solving skills, and dedication to work"</p>
+        <p class="section-text">"I'm a person with lots of ideas and a desire to learn, problem-solving skills, and
+            dedication to work"</p>
         <div class="btm-animation"><a href="about-me.html" target="_blank" class="btn">Learn more about me</a></div>
         <h3>PROGRAMMING SKILLS</h3>
         <div class="container">
             <div class="row card-row">
                 <div class="col-5 col-sm-4 col-md-3 col-lg-2">
                     <div class="card mb-3 p-2">
-                        <img src="./images/HTML5_logo_and_wordmark.svg" class="card-img-top img-fluid"
-                            alt="HTML5 logo">
+                        <img src="./images/HTML5_logo_and_wordmark.svg" class="card-img-top img-fluid" alt="HTML5 logo">
                     </div>
                 </div>
                 <div class="col-5 col-sm-4 col-md-3 col-lg-2">
@@ -284,6 +233,59 @@
     </section>
 
 
+
+    <!-- NAVBAR SCRIPT -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var navbarToggler = document.querySelector('.navbar-toggler');
+            var navLinks = document.querySelectorAll('.nav-link');
+            var navbar = document.querySelector('.navbar');
+
+            navLinks.forEach(function (link) {
+                link.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    var targetId = this.getAttribute('href');
+                    var targetSection = document.querySelector(targetId);
+                    var offsetPosition = targetSection.offsetTop - navbar.offsetHeight;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+
+                    if (window.getComputedStyle(navbarToggler).display !== 'none') {
+                        navbarToggler.click();
+                    }
+                });
+            });
+        });
+
+    </script>
+
+    <!-- EMAILJS SCRIPT-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+                publicKey: "bMOpUWBSnYE6ynS4K",
+            });
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById('contact-form').addEventListener('submit', function (event) {
+                event.preventDefault();
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(() => {
+                        alert('MESSAGE SENT!');
+                    }, (error) => {
+                        alert('FAILED...', error);
+                    });
+            });
+        }
+    </script>
 </body>
 
 </html>
