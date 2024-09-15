@@ -1,291 +1,445 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/icon" href="./images/brandmark-blu.png" />
+		<link rel="stylesheet" href="main.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+			rel="stylesheet"
+		/>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/icon" href="./images/favicon.ico">
-    <link rel="stylesheet" href="main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+		<!-- OPEN GRAPH TAG -->
+		<meta property="og:title" content="AB Game/Web Development" />
+		<meta
+			property="og:description"
+			content="My personal Game/Web Development site"
+		/>
+		<meta property="og:image" content="https://imgur.com/a/yGMMKra" />
+		<meta property="og:url" content="https://alessioberruto.github.io/" />
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="AB Game/Web Development" />
 
-    <!-- OPEN GRAPH TAG -->
-    <meta property="og:title" content="AB Game/Web Development">
-    <meta property="og:description" content="My personal Game/Web Development site">
-    <meta property="og:image" content="https://imgur.com/a/yGMMKra">
-    <meta property="og:url" content="https://alessioberruto.github.io/">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="AB Game/Web Development">
+		<title>AB Game/Web Development</title>
+	</head>
 
-    <title>AB Game/Web Development</title>
-</head>
+	<body id="page-top">
+		<!-- NAVBAR -->
+		<nav class="navbar sticky-top navbar-expand-lg navbar-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#page-top">
+					<img
+						src="./images/brandmark-blu.png"
+						alt="AB Brand"
+						width="24"
+						height="30"
+						class="d-inline-block align-text-top"
+					/>
+					<p class="brand-name">AB Development</p>
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="#page-top">
+								<p class="nav-home">Home</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#about">
+								<p class="nav-about">About me</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#portfolio">
+								<p class="nav-portfolio">Portfolio</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#contacts">
+								<p class="nav-contacts">Contacts</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 
-<body id="page-top">
+		<!-- HOME SECTION -->
+		<section id="page-top" class="home-section">
+			<div class="row home-row">
+				<div class="col-7 col-sm-6 col-md-4">
+					<div class="image-container">
+						<img src="./images/photo.jpg" alt="My picture" />
+					</div>
+				</div>
+				<div class="col-7 col-sm-12 col-md-4">
+					<div class="name-container">
+						<div class="row">
+							<div class="col-12">
+								<h1 class="section-title">BERRUTO ALESSIO</h1>
+							</div>
+							<div class="col-12">
+								<h4 class="section-text">Game / Web Development</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-7 col-sm-6 col-md-4">
+					<div class="video-container">
+						<video autoplay muted loop class="background-video">
+							<source src="./video/Screens.mp4" type="video/mp4" />
+							Your browser does not support the video tag.
+						</video>
+					</div>
+				</div>
+			</div>
+		</section>
 
-    <!-- NAVBAR -->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#page-top">
-                <img src="./images/AB-icon.png" alt="AB Brand" width="30" height="24"
-                    class="d-inline-block align-text-top">
-                <p class="brand-name">AB Development</p>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#page-top">
-                            <p class="nav-home">Home</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">
-                            <p class="nav-about">About me</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">
-                            <p class="nav-portfolio">Portfolio</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contacts">
-                            <p class="nav-contacts">Contacts</p>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+		<!-- ABOUT SECTION -->
+		<section id="about" class="about-section">
+			<h1 class="section-title">ABOUT ME</h1>
+			<p class="section-text">
+				"I'm a person with lots of ideas and a desire to learn, problem-solving
+				skills, and dedication to work"
+			</p>
+			<div class="btm-animation">
+				<a href="about-me.html" target="_blank" class="btn"
+					>Learn more about me</a
+				>
+			</div>
+			<h3><strong>PROGRAMMING SKILLS</strong></h3>
+			<div class="container">
+				<div class="row card-row">
+					<div class="col-5 col-sm-4 col-md-3 col-lg-3">
+						<div class="card mb-3 p-2">
+							<img
+								src="./images/HTML5_logo_and_wordmark.svg"
+								class="card-img-top img-fluid"
+								alt="HTML5 logo"
+							/>
+						</div>
+					</div>
+					<div class="col-5 col-sm-4 col-md-3 col-lg-3">
+						<div class="card mb-3 p-2">
+							<img
+								src="./images/CSS3_logo_and_wordmark.svg"
+								class="card-img-top img-fluid"
+								alt="CSS3 logo"
+							/>
+						</div>
+					</div>
+					<div class="col-5 col-sm-4 col-md-3 col-lg-3">
+						<div class="card mb-3 p-2">
+							<img
+								src="./images/Bootstrap_logo.svg"
+								class="card-img-top img-fluid"
+								alt="Bootstrap logo"
+							/>
+						</div>
+					</div>
+					<div class="col-5 col-sm-4 col-md-3 col-lg-3">
+						<div class="card mb-3 p-2">
+							<img
+								src="./images/Sass_Logo_Color.svg"
+								class="card-img-top img-fluid"
+								alt="SASS logo"
+							/>
+						</div>
+					</div>
+					<div class="col-5 col-sm-4 col-md-3 col-lg-3">
+						<div class="card mb-3 p-2">
+							<img
+								src="./images/Javascript-logo.svg"
+								class="card-img-top img-fluid"
+								alt="Javascript logo"
+							/>
+						</div>
+					</div>
+					<div class="col-5 col-sm-4 col-md-3 col-lg-3">
+						<div class="card mb-3 p-2">
+							<img
+								src="./images/Typescript_logo_2020.svg"
+								class="card-img-top img-fluid"
+								alt="Typescript logo"
+							/>
+						</div>
+					</div>
+					<div class="col-5 col-sm-4 col-md-3 col-lg-3">
+						<div class="card mb-3 p-2">
+							<img
+								src="./images/Java_Logo.svg"
+								class="card-img-top img-fluid"
+								alt="Java logo"
+							/>
+						</div>
+					</div>
+					<div class="col-5 col-sm-4 col-md-3 col-lg-3">
+						<div class="card mb-3 p-2">
+							<img
+								src="./images/React-icon.svg"
+								class="card-img-top img-fluid"
+								alt="React logo"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-    <!-- HOME SECTION -->
-    <section id="page-top" class="home-section">
-        <div class="row home-row">
-            <div class="col-7 col-sm-6 col-md-4">
-                <div class="image-container">
-                    <img src="./images/photo.jpg" alt="My picture">
-                </div>
-            </div>
-            <div class="col-7 col-sm-12 col-md-4">
-                <div class="name-container">
-                    <div class="row">
-                        <div class="col-12">
-                            <h1 class="section-title">BERRUTO ALESSIO</h1>
-                        </div>
-                        <div class="col-12">
-                            <h4 class="section-text">Game / Web Development</h4>
-                        </div>
+		<!-- PORTFOLIO SECTION -->
+		<section id="portfolio" class="portfolio-section">
+			<h1 class="section-title">PORTFOLIO</h1>
+			<p class="section-text">
+				"I've worked on various university projects, and I'm currently working
+				on the final project"
+			</p>
+			<div class="container">
+				<div class="row card-row">
+					<div class="col-7 col-sm-6 col-md-4 col-lg-4">
+						<a
+							href="https://alessioberruto.github.io/Simple-counter-app/"
+							target="_blank"
+						>
+							<div class="card mb-3 p-2">
+								<img
+									src="./images/javascript-basics-project.png"
+									class="card-img-top img-fluid"
+									alt="Javascript Basics project"
+								/>
+							</div>
+						</a>
+					</div>
+					<div class="col-7 col-sm-6 col-md-4 col-lg-4">
+						<a
+							href="https://alessioberruto.github.io/A-Book-Finder/"
+							target="_blank"
+						>
+							<div class="card mb-3 p-2">
+								<img
+									src="./images/javascript-advanced-project.png"
+									class="card-img-top img-fluid"
+									alt="Javascript Advanced project"
+								/>
+							</div>
+						</a>
+					</div>
+					<div class="col-7 col-sm-6 col-md-4 col-lg-4">
+						<a
+							href="https://codepen.io/alessioberruto/details/xxoRabY"
+							target="_blank"
+						>
+							<div class="card mb-3 p-2">
+								<img
+									src="./images/typescript-project.png"
+									class="card-img-top img-fluid"
+									alt="Typescript project"
+								/>
+							</div>
+						</a>
+					</div>
+					<div class="col-7 col-sm-6 col-md-4 col-lg-4">
+						<a
+							href="https://github.com/AlessioBerruto/Pooling-Around-App"
+							target="_blank"
+						>
+							<div class="card mb-3 p-2">
+								<img
+									src="./images/java-project.png"
+									class="card-img-top img-fluid"
+									alt="Java project"
+								/>
+							</div>
+						</a>
+					</div>
+					<div class="col-7 col-sm-6 col-md-4 col-lg-4">
+						<a
+							href="https://alessioberruto.github.io/A-Better-Life-App/"
+							target="_blank"
+						>
+							<div class="card mb-3 p-2">
+								<img
+									src="./images/react-project.png"
+									class="card-img-top img-fluid"
+									alt="React project"
+								/>
+							</div>
+						</a>
+					</div>
+					<div class="col-7 col-sm-6 col-md-4 col-lg-4">
+						<div class="card mb-3 p-2">
+							<img
+								src="./images/Question_Mark.svg"
+								class="card-img-top img-fluid"
+								alt="Question mark logo"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-                    </div>
-                </div>
-            </div>
-            <div class="col-7 col-sm-6 col-md-4">
-                <div class="video-container">
-                    <video autoplay muted loop class="background-video">
-                        <source src="./video/Screens.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
-        </div>
-    </section>
+		<!-- CONTACT SECTION -->
+		<section id="contacts" class="contacts-section">
+			<h1 class="section-title">CONTACTS</h1>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 col-md-6 col-lg-4">
+						<div class="row contact-column">
+							<div class="contact-description">
+								<h4>Contact me:</h4>
+							</div>
+							<div class="contact-description">
+								<p>
+									"If you would like to contact me to propose an idea or a
+									project, please fill out the form or visit my social media
+									pages"
+								</p>
+							</div>
+						</div>
+					</div>
 
+					<div class="col-sm-6 col-md-6 col-lg-4">
+						<form id="contact-form">
+							<!-- To simplify the tutorial, the value is static. -->
+							<input type="hidden" name="contact_number" value="697483" />
+							<label>
+								<p>Full Name / Society *</p>
+							</label>
+							<input type="text" name="user_name" class="input-effect" required />
+							<label>
+								<p>Email *</p>
+							</label>
+							<input type="email" name="user_email" class="input-effect" required />
+							<label>
+								<p>Message</p>
+							</label>
+							<textarea name="message" class="input-effect"></textarea>
+							<input type="submit" value="Send" class="send-button" />
+						</form>
+					</div>
 
-    <!-- ABOUT SECTION -->
-    <section id="about" class="about-section">
-        <h1 class="section-title">ABOUT ME</h1>
-        <p class="section-text">"I'm a person with lots of ideas and a desire to learn, problem-solving skills, and
-            dedication to work"</p>
-        <div class="btm-animation"><a href="about-me.html" target="_blank" class="btn">Learn more about me</a></div>
-        <h3>PROGRAMMING SKILLS</h3>
-        <div class="container">
-            <div class="row card-row">
-                <div class="col-5 col-sm-4 col-md-3 col-lg-2">
-                    <div class="card mb-3 p-2">
-                        <img src="./images/HTML5_logo_and_wordmark.svg" class="card-img-top img-fluid" alt="HTML5 logo">
-                    </div>
-                </div>
-                <div class="col-5 col-sm-4 col-md-3 col-lg-2">
-                    <div class="card mb-3 p-2">
-                        <img src="./images/CSS3_logo_and_wordmark.svg" class="card-img-top img-fluid" alt="CSS3 logo">
-                    </div>
-                </div>
-                <div class="col-5 col-sm-4 col-md-3 col-lg-2">
-                    <div class="card mb-3 p-2">
-                        <img src="./images/Bootstrap_logo.svg" class="card-img-top img-fluid" alt="Bootstrap logo">
-                    </div>
-                </div>
-                <div class="col-5 col-sm-4 col-md-3 col-lg-2">
-                    <div class="card mb-3 p-2">
-                        <img src="./images/Sass_Logo_Color.svg" class="card-img-top img-fluid" alt="SASS logo">
-                    </div>
-                </div>
-                <div class="col-5 col-sm-4 col-md-3 col-lg-2">
-                    <div class="card mb-3 p-2">
-                        <img src="./images/Visual_Studio_Icon_2022.svg" class="card-img-top img-fluid"
-                            alt="Visual Studio logo">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+					<div class="col-sm-12 col-md-12 col-lg-4">
+						<div class="row link-column">
+							<div class="social-link">
+								<h4>Social pages:</h4>
+							</div>
+							<div class="row">
+								<div class="col-6 col-lg-12 social-link">
+									<img src="./images/LinkedIn_icon.svg" alt="LinkedIn Logo" />
+									<a
+										href="https://www.linkedin.com/in/alessio-berruto-0439992a4/"
+										target="_blank"
+										>LinkedIn</a
+									>
+								</div>
+								<div class="col-6 col-lg-12 social-link">
+									<img
+										src="./images/Instagram_logo_2016.svg"
+										alt="Instagram Logo"
+									/>
+									<a
+										href="https://www.instagram.com/berrutoalessio/"
+										target="_blank"
+										>Instagram</a
+									>
+								</div>
+								<div class="col-6 col-lg-12 social-link">
+									<img src="./images/Facebook_icon.svg" alt="Facebook Logo" />
+									<a
+										href="https://www.facebook.com/profile.php?id=100077533711598&locale=it_IT"
+										target="_blank"
+										>Facebook</a
+									>
+								</div>
+								<div class="col-6 col-lg-12 social-link">
+									<img
+										src="./images/Octicons-mark-github.svg"
+										alt="GitHub Logo"
+									/>
+									<a href="https://github.com/AlessioBerruto" target="_blank"
+										>GitHub</a
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
+		<!-- NAVBAR SCRIPT -->
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				var navbarToggler = document.querySelector(".navbar-toggler");
+				var navLinks = document.querySelectorAll(".nav-link");
+				var navbar = document.querySelector(".navbar");
 
+				navLinks.forEach(function (link) {
+					link.addEventListener("click", function (event) {
+						event.preventDefault();
+						var targetId = this.getAttribute("href");
+						var targetSection = document.querySelector(targetId);
+						var offsetPosition = targetSection.offsetTop - navbar.offsetHeight;
 
+						window.scrollTo({
+							top: offsetPosition,
+							behavior: "smooth",
+						});
 
-    <!-- PORTFOLIO SECTION -->
-    <section id="portfolio" class="portfolio-section">
-        <h1 class="section-title">PORTFOLIO</h1>
-        <p class="section-text">"I'm currently working on two different projects, and I'm considering a third one"</p>
-        <div class="container">
-            <div class="row card-row">
-                <div class="col-7 col-sm-6 col-md-4 col-lg-3">
-                    <div class="card mb-3 p-2">
-                        <img src="./images/Java_Logo.svg" class="card-img-top img-fluid" alt="Java logo">
-                    </div>
-                </div>
-                <div class="col-7 col-sm-6 col-md-4 col-lg-3">
-                    <div class="card mb-3 p-2">
-                        <img src="./images/internet-svgrepo-com.svg" class="card-img-top img-fluid" alt="Website logo">
-                    </div>
-                </div>
-                <div class="col-7 col-sm-6 col-md-4 col-lg-3">
-                    <div class="card mb-3 p-2">
-                        <img src="./images/Question_Mark.svg" class="card-img-top img-fluid" alt="Question mark logo">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+						if (window.getComputedStyle(navbarToggler).display !== "none") {
+							navbarToggler.click();
+						}
+					});
+				});
+			});
+		</script>
 
-    <!-- CONTACT SECTION -->
-    <section id="contacts" class="contacts-section">
-        <h1 class="section-title">CONTACTS</h1>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 col-md-6 col-lg-4">
-                    <div class="row contact-column">
-                        <div class="contact-description">
-                            <h4>Contact me:</h4>
-                        </div>
-                        <div class="contact-description">
-                            <p>"If you would like to contact me to propose an idea or a project, please fill out the
-                                form or visit my social media pages"</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-6 col-lg-4">
-                    <form id="contact-form">
-                        <!-- To simplify the tutorial, the value is static. -->
-                        <input type="hidden" name="contact_number" value="697483">
-                        <label>
-                            <p>Full Name / Society *</p>
-                        </label>
-                        <input type="text" name="user_name" required>
-                        <label>
-                            <p>Email *</p>
-                        </label>
-                        <input type="email" name="user_email" required>
-                        <label>
-                            <p>Message</p>
-                        </label>
-                        <textarea name="message"></textarea>
-                        <input type="submit" value="Send" class="send-button">
-                    </form>
-                </div>
-
-                <div class="col-sm-12 col-md-12 col-lg-4">
-                    <div class="row link-column">
-                        <div class="social-link">
-                            <h4>Social pages:</h4>
-                        </div>
-                        <div class="row">
-                            <div class="col-6 col-lg-12 social-link">
-                                <img src="./images/LinkedIn_icon.svg" alt="LinkedIn Logo">
-                                <a href="https://www.linkedin.com/in/alessio-berruto-0439992a4/"
-                                    target="_blank">LinkedIn</a>
-                            </div>
-                            <div class="col-6 col-lg-12 social-link">
-                                <img src="./images/Instagram_logo_2016.svg" alt="Instagram Logo">
-                                <a href="https://www.instagram.com/berrutoalessio/" target="_blank">Instagram</a>
-                            </div>
-                            <div class="col-6 col-lg-12 social-link">
-                                <img src="./images/Facebook_icon.svg" alt="Facebook Logo">
-                                <a href="https://www.facebook.com/profile.php?id=100077533711598&locale=it_IT"
-                                    target="_blank">Facebook</a>
-                            </div>
-                            <div class="col-6 col-lg-12 social-link">
-                                <img src="./images/Octicons-mark-github.svg" alt="GitHub Logo">
-                                <a href="https://github.com/AlessioBerruto" target="_blank">GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <!-- NAVBAR SCRIPT -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var navbarToggler = document.querySelector('.navbar-toggler');
-            var navLinks = document.querySelectorAll('.nav-link');
-            var navbar = document.querySelector('.navbar');
-
-            navLinks.forEach(function (link) {
-                link.addEventListener('click', function (event) {
-                    event.preventDefault();
-                    var targetId = this.getAttribute('href');
-                    var targetSection = document.querySelector(targetId);
-                    var offsetPosition = targetSection.offsetTop - navbar.offsetHeight;
-
-                    window.scrollTo({
-                        top: offsetPosition,
-                        behavior: 'smooth'
-                    });
-
-                    if (window.getComputedStyle(navbarToggler).display !== 'none') {
-                        navbarToggler.click();
-                    }
-                });
-            });
-        });
-
-    </script>
-
-    <!-- EMAILJS SCRIPT-->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function () {
-            // https://dashboard.emailjs.com/admin/account
-            emailjs.init({
-                publicKey: "bMOpUWBSnYE6ynS4K",
-            });
-        })();
-    </script>
-    <script type="text/javascript">
-        window.onload = function () {
-            document.getElementById('contact-form').addEventListener('submit', function (event) {
-                event.preventDefault();
-                // these IDs from the previous steps
-                emailjs.sendForm('contact_service', 'contact_form', this)
-                    .then(() => {
-                        alert('MESSAGE SENT!');
-                    }, (error) => {
-                        alert('FAILED...', error);
-                    });
-            });
-        }
-    </script>
-</body>
-
+		<!-- EMAILJS SCRIPT-->
+		<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+		></script>
+		<script type="text/javascript">
+			(function () {
+				// https://dashboard.emailjs.com/admin/account
+				emailjs.init({
+					publicKey: "bMOpUWBSnYE6ynS4K",
+				});
+			})();
+		</script>
+		<script type="text/javascript">
+			window.onload = function () {
+				document
+					.getElementById("contact-form")
+					.addEventListener("submit", function (event) {
+						event.preventDefault();
+						// these IDs from the previous steps
+						emailjs.sendForm("contact_service", "contact_form", this).then(
+							() => {
+								alert("MESSAGE SENT!");
+							},
+							(error) => {
+								alert("FAILED...", error);
+							}
+						);
+					});
+			};
+		</script>
+	</body>
 </html>

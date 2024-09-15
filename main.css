@@ -11967,9 +11967,17 @@ textarea.form-control-lg {
 }
 .home-section {
   background-color: #979aaa;
+  background-image: url("./images/pattern-bianco.png");
+  background-size: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.home-section h1, .home-section .h1 {
+  margin-bottom: 25px;
+}
+.home-section h1, .home-section .h1, .home-section h4, .home-section .h4 {
+  text-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
 }
 
 .home-row {
@@ -11982,6 +11990,7 @@ textarea.form-control-lg {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: transform 0.8s;
 }
 .image-container img {
   max-width: 100%;
@@ -11997,6 +12006,19 @@ textarea.form-control-lg {
   align-items: center;
   justify-content: center;
   text-align: center;
+  transition: transform 0.8s;
+}
+
+.image-container:hover {
+  transform: translateX(10px) scale(1.1);
+}
+
+.video-container:hover {
+  transform: translateX(-10px) scale(1.1);
+}
+
+.name-container:hover {
+  transform: scale(1.08);
 }
 
 .background-video {
@@ -12040,7 +12062,8 @@ textarea.form-control-lg {
   box-shadow: 0 -10vw 0 #0084ff inset;
 }
 .about-section h3, .about-section .h3 {
-  padding-top: 60px;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 .about-section a {
   color: aliceblue;
@@ -12086,13 +12109,20 @@ textarea.form-control-lg {
 }
 .portfolio-section .card {
   height: 200px;
+  transition: transform 0.8s;
 }
-.portfolio-section .card-img-top {
-  opacity: 0.5;
+.portfolio-section .card:hover {
+  transform: scale(1.05);
+}
+.portfolio-section p {
+  margin-bottom: 30px;
 }
 
 .contacts-section {
   background-color: #8b8589;
+}
+.contacts-section h1, .contacts-section .h1 {
+  margin-bottom: 30px;
 }
 
 .contact-description,
@@ -12136,6 +12166,10 @@ textarea.form-control-lg {
   margin-bottom: 10px;
   border: 1px solid aliceblue;
   border-radius: 4px;
+  transition: transform 0.8s;
+}
+#contact-form .input-effect:hover {
+  transform: scale(1.03);
 }
 #contact-form input {
   border: none;
@@ -12277,11 +12311,11 @@ body .contacts-section {
   overflow-x: hidden;
 }
 body .section-title {
-  padding-top: 40px;
+  padding-top: 10px;
   font-size: 50px;
 }
 body .section-text {
-  padding-top: 50px;
+  padding-top: 20px;
   color: aliceblue;
 }
 
@@ -12290,7 +12324,8 @@ nav {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 nav img {
-  margin-top: -2px;
+  margin-top: -6px;
+  margin-left: 5px;
 }
 nav li {
   margin-right: 10px;
@@ -12311,7 +12346,7 @@ nav .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='aliceblue' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 nav .brand-name {
-  margin-left: 10px;
+  margin-left: 8px;
 }
 nav .nav-home:hover {
   border: 1px solid aliceblue;

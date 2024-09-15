@@ -37,16 +37,16 @@ body {
         min-height: 100vh;
         text-align: center;
         padding: 10px;
-        overflow-x: hidden;
+        overflow-x: hidden;        
     }
 
     .section-title {
-        padding-top: 40px;
+        padding-top: 10px;
         font-size: 50px;        
     }
 
     .section-text {
-        padding-top: 50px;
+        padding-top: 20px;
         color: aliceblue;
     }
 }
@@ -58,7 +58,9 @@ nav {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 
     img {
-        margin-top: -2px;
+        margin-top: -6px;
+        margin-left: 5px;
+
     }
 
     li {
@@ -86,7 +88,7 @@ nav {
     }
 
     .brand-name {
-        margin-left: 10px;
+        margin-left: 8px;
     }
 
     .nav-home:hover {           

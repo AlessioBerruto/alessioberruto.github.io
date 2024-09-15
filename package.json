@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
-    "bootstrap": "^5.3.3"
+    "bootstrap": "^5.3.3",
+    "progetto-html-e-css-di-alessio-berruto": "file:"
   }
 }

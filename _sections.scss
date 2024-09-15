@@ -1,9 +1,19 @@
 // HOME SECTION
 .home-section {
     background-color: $secondary;
+    background-image: url("./images/pattern-bianco.png");
+    background-size: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    h1 {
+        margin-bottom: 25px;
+    }
+
+    h1, h4 {
+        text-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
+    }
 
 }
 
@@ -17,6 +27,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: transform 0.8s;
 
 
     img {
@@ -34,6 +45,20 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    transition: transform 0.8s;
+}
+
+
+.image-container:hover {
+    transform: translateX(10px) scale(1.1);
+}
+
+.video-container:hover {
+    transform: translateX(-10px) scale(1.1);
+}
+
+.name-container:hover {  
+    transform: scale(1.08);    
 }
 
 .background-video {
@@ -82,7 +107,8 @@
       }
 
     h3 {
-        padding-top: 60px;
+        padding-top: 20px;
+        padding-bottom: 10px;
     }
 
     a {
@@ -133,17 +159,27 @@
 
     .card {
         height: 200px;
+        transition: transform 0.8s;
     }
 
-    .card-img-top {
-        opacity: 0.5;
+    .card:hover {
+        transform: scale(1.05);        
     }
+
+    p {
+        margin-bottom: 30px;
+    }
+    
 }
 
 
 // CONTACT SECTION
 .contacts-section {
     background-color: $fifth;
+
+    h1 {
+        margin-bottom: 30px;
+    }
 }
 
 .contact-description,
@@ -195,6 +231,11 @@
         margin-bottom: 10px;
         border: 1px solid aliceblue;
         border-radius: 4px;
+        transition: transform 0.8s;
+    }
+
+    .input-effect:hover {
+        transform: scale(1.03);  
     }
 
     input {
