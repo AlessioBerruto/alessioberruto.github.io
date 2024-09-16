@@ -12,6 +12,7 @@ Welcome to the AB Game/Web Development website! This is a personal website showc
 ## Introduction
 
 AB Game/Web Development is a personal portfolio website that includes sections about me, my programming skills, and my past projects. The site also provides a contact form for getting in touch with me and links to my social media profiles.
+This is my project as a developer, and it is constantly evolving every time I gain new skills and knowledge.  
 
 ## Sections
 
