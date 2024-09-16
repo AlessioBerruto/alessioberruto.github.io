@@ -1,0 +1,38 @@
+# Node modules
+node_modules/
+
+# Directory di build/output
+dist/
+build/
+
+# Files di log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# File di blocco
+package-lock.json
+yarn.lock
+.pnpm-debug.log
+
+# Configurazioni IDE/Editor
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Sistema operativo o file generati dall'editor
+.DS_Store
+Thumbs.db
+
+# Ambiente
+.env
+.env.local
+.env.*.local
+
+# Cache e file temporanei
+.cache/
+.temp/
+*.tmp

@@ -211,7 +211,7 @@
 			</p>
 			<div class="container">
 				<div class="row card-row">
-					<div class="col-7 col-sm-6 col-md-4 col-lg-4">
+					<div class="col-6 col-sm-6 col-md-4 col-lg-4">
 						<a
 							href="https://alessioberruto.github.io/Simple-counter-app/"
 							target="_blank"
@@ -225,7 +225,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="col-7 col-sm-6 col-md-4 col-lg-4">
+					<div class="col-6 col-sm-6 col-md-4 col-lg-4">
 						<a
 							href="https://alessioberruto.github.io/A-Book-Finder/"
 							target="_blank"
@@ -239,7 +239,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="col-7 col-sm-6 col-md-4 col-lg-4">
+					<div class="col-6 col-sm-6 col-md-4 col-lg-4">
 						<a
 							href="https://codepen.io/alessioberruto/details/xxoRabY"
 							target="_blank"
@@ -253,7 +253,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="col-7 col-sm-6 col-md-4 col-lg-4">
+					<div class="col-6 col-sm-6 col-md-4 col-lg-4">
 						<a
 							href="https://github.com/AlessioBerruto/Pooling-Around-App"
 							target="_blank"
@@ -267,7 +267,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="col-7 col-sm-6 col-md-4 col-lg-4">
+					<div class="col-6 col-sm-6 col-md-4 col-lg-4">
 						<a
 							href="https://alessioberruto.github.io/A-Better-Life-App/"
 							target="_blank"
@@ -281,7 +281,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="col-7 col-sm-6 col-md-4 col-lg-4">
+					<div class="col-6 col-sm-6 col-md-4 col-lg-4">
 						<div class="card mb-3 p-2">
 							<img
 								src="./images/Question_Mark.svg"
@@ -302,7 +302,7 @@
 					<div class="col-sm-6 col-md-6 col-lg-4">
 						<div class="row contact-column">
 							<div class="contact-description">
-								<h4>Contact me:</h4>
+								<h4><strong>Contact me:</strong></h4>
 							</div>
 							<div class="contact-description">
 								<p>
@@ -316,64 +316,77 @@
 
 					<div class="col-sm-6 col-md-6 col-lg-4">
 						<form id="contact-form">
-							<!-- To simplify the tutorial, the value is static. -->
-							<input type="hidden" name="contact_number" value="697483" />
+							<input type="hidden" name="contact_number" id="contact-number" />
 							<label>
 								<p>Full Name / Society *</p>
 							</label>
-							<input type="text" name="user_name" class="input-effect" required />
+							<input
+								type="text"
+								name="user_name"
+								class="input-effect"
+								required
+							/>
 							<label>
 								<p>Email *</p>
 							</label>
-							<input type="email" name="user_email" class="input-effect" required />
+							<input
+								type="email"
+								name="user_email"
+								class="input-effect"
+								required
+							/>
 							<label>
 								<p>Message</p>
 							</label>
 							<textarea name="message" class="input-effect"></textarea>
 							<input type="submit" value="Send" class="send-button" />
+							<div id="form-feedback" class="feedback-message"></div>
 						</form>
 					</div>
 
 					<div class="col-sm-12 col-md-12 col-lg-4">
 						<div class="row link-column">
 							<div class="social-link">
-								<h4>Social pages:</h4>
+								<h4><strong>Social pages:</strong></h4>
 							</div>
 							<div class="row">
 								<div class="col-6 col-lg-12 social-link">
-									<img src="./images/LinkedIn_icon.svg" alt="LinkedIn Logo" />
 									<a
 										href="https://www.linkedin.com/in/alessio-berruto-0439992a4/"
 										target="_blank"
-										>LinkedIn</a
+									>
+										<img src="./images/LinkedIn_icon.svg" alt="LinkedIn Logo" />
+										LinkedIn</a
 									>
 								</div>
 								<div class="col-6 col-lg-12 social-link">
-									<img
-										src="./images/Instagram_logo_2016.svg"
-										alt="Instagram Logo"
-									/>
 									<a
 										href="https://www.instagram.com/berrutoalessio/"
 										target="_blank"
-										>Instagram</a
+									>
+										<img
+											src="./images/Instagram_logo_2016.svg"
+											alt="Instagram Logo"
+										/>
+										Instagram</a
 									>
 								</div>
 								<div class="col-6 col-lg-12 social-link">
-									<img src="./images/Facebook_icon.svg" alt="Facebook Logo" />
 									<a
 										href="https://www.facebook.com/profile.php?id=100077533711598&locale=it_IT"
 										target="_blank"
-										>Facebook</a
+									>
+										<img src="./images/Facebook_icon.svg" alt="Facebook Logo" />
+										Facebook</a
 									>
 								</div>
 								<div class="col-6 col-lg-12 social-link">
-									<img
-										src="./images/Octicons-mark-github.svg"
-										alt="GitHub Logo"
-									/>
-									<a href="https://github.com/AlessioBerruto" target="_blank"
-										>GitHub</a
+									<a href="https://github.com/AlessioBerruto" target="_blank">
+										<img
+											src="./images/Octicons-mark-github.svg"
+											alt="GitHub Logo"
+										/>
+										GitHub</a
 									>
 								</div>
 							</div>
@@ -383,63 +396,12 @@
 			</div>
 		</section>
 
-		<!-- NAVBAR SCRIPT -->
-		<script>
-			document.addEventListener("DOMContentLoaded", function () {
-				var navbarToggler = document.querySelector(".navbar-toggler");
-				var navLinks = document.querySelectorAll(".nav-link");
-				var navbar = document.querySelector(".navbar");
-
-				navLinks.forEach(function (link) {
-					link.addEventListener("click", function (event) {
-						event.preventDefault();
-						var targetId = this.getAttribute("href");
-						var targetSection = document.querySelector(targetId);
-						var offsetPosition = targetSection.offsetTop - navbar.offsetHeight;
-
-						window.scrollTo({
-							top: offsetPosition,
-							behavior: "smooth",
-						});
-
-						if (window.getComputedStyle(navbarToggler).display !== "none") {
-							navbarToggler.click();
-						}
-					});
-				});
-			});
-		</script>
-
-		<!-- EMAILJS SCRIPT-->
+		<!-- EMAILJS SCRIPT -->
 		<script
 			type="text/javascript"
 			src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
 		></script>
-		<script type="text/javascript">
-			(function () {
-				// https://dashboard.emailjs.com/admin/account
-				emailjs.init({
-					publicKey: "bMOpUWBSnYE6ynS4K",
-				});
-			})();
-		</script>
-		<script type="text/javascript">
-			window.onload = function () {
-				document
-					.getElementById("contact-form")
-					.addEventListener("submit", function (event) {
-						event.preventDefault();
-						// these IDs from the previous steps
-						emailjs.sendForm("contact_service", "contact_form", this).then(
-							() => {
-								alert("MESSAGE SENT!");
-							},
-							(error) => {
-								alert("FAILED...", error);
-							}
-						);
-					});
-			};
-		</script>
+
+		<script src="./main.js"></script>
 	</body>
 </html>

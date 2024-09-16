@@ -216,7 +216,7 @@
     }
 
     p {
-        margin-bottom: 0;
+        margin-bottom: 0;        
     }
 
     label {
@@ -243,6 +243,7 @@
     }
 }
 
+
 .send-button {
     background-color: $brand-color;
     color: aliceblue;
@@ -261,6 +262,20 @@
     margin-top: 3px;
     margin-left: 3px;
     box-shadow: none;
+}
+
+.feedback-message {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 16px;    
+}
+
+.feedback-message.success {
+    color: green; 
+}
+
+.feedback-message.error {
+    color: red;
 }
 
 
@@ -292,8 +307,6 @@
     }
 
     a:hover {
-        color: aliceblue;
-        border: 1px solid aliceblue;
-        border-radius: 4px;
+        color: aliceblue;        
     }
 }
