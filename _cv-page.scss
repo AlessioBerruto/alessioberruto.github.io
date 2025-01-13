@@ -3,47 +3,30 @@
 .cv-section {
     padding: 30px 20px;
     background-color: $third;
-
+    height: 140vh;
+    width: 100%;
+    
     .cv-container {
-        max-width: 800px;
-        background-color: aliceblue;
-        margin: 0 auto;        
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        height: 100%;
+        width: 100%;
+        display: flex;  
+        flex-direction: row;        
+        justify-content: center;
+                
     }
 
-    .cv-content {
-        padding: 0 20px;
+    .cv-page-1,
+    .cv-page-2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;  
+        width: 50%; 
 
-        h3 {
-            color: $primary;
-            border-bottom: 2px solid $primary;
-            padding-bottom: 5px;
-            margin: 25px 0 10px;
-        }
-
-        p, ul {
-            margin-bottom: 10px;
-        }
-
-        ul {
-            padding-left: 20px;
-            padding-bottom: 20px;
-        }
-    }
-
-    .cv-title {
-        font-size: 50px;    
-        margin: 10px 0 20px;
-    }
-
-    .cv-header {
-        text-align: center;    
-        background-color: $brand-color;
-        color: aliceblue;
-        padding: 20px;
-        border-top-left-radius: 8px;
-        border-top-right-radius: 8px;
+        img {
+            height: 100%;            
+            
+        }        
     }
 }
 
@@ -52,6 +35,7 @@ footer {
     background-color: $primary;
     text-align: center;
     padding: 10px;
+    
 
     .top-link {
         color: aliceblue;

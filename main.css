@@ -12238,41 +12238,27 @@ textarea.form-control-lg {
 .cv-section {
   padding: 30px 20px;
   background-color: #838996;
+  height: 140vh;
+  width: 100%;
 }
 .cv-section .cv-container {
-  max-width: 800px;
-  background-color: aliceblue;
-  margin: 0 auto;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
-.cv-section .cv-content {
-  padding: 0 20px;
+.cv-section .cv-page-1,
+.cv-section .cv-page-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 50%;
 }
-.cv-section .cv-content h3, .cv-section .cv-content .h3 {
-  color: #4c516d;
-  border-bottom: 2px solid #4c516d;
-  padding-bottom: 5px;
-  margin: 25px 0 10px;
-}
-.cv-section .cv-content p, .cv-section .cv-content ul {
-  margin-bottom: 10px;
-}
-.cv-section .cv-content ul {
-  padding-left: 20px;
-  padding-bottom: 20px;
-}
-.cv-section .cv-title {
-  font-size: 50px;
-  margin: 10px 0 20px;
-}
-.cv-section .cv-header {
-  text-align: center;
-  background-color: #0084ff;
-  color: aliceblue;
-  padding: 20px;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+.cv-section .cv-page-1 img,
+.cv-section .cv-page-2 img {
+  height: 100%;
 }
 
 footer {
@@ -12393,6 +12379,33 @@ nav .nav-contacts:active {
   color: #4c516d;
 }
 
+@media (min-width: 992px) and (max-width: 1200px) {
+  nav p,
+  label p,
+  .home-section p,
+  .about-section p,
+  .about-section .btn,
+  .portfolio-section p,
+  .contact-description p,
+  .social-link a,
+  footer {
+    font-size: 18px;
+  }
+  body .section-title {
+    font-size: 45px;
+  }
+  body .cv-section {
+    height: 115vh;
+  }
+  body .about-section h3, body .about-section .h3 {
+    font-size: 25px;
+  }
+  .social-link,
+  .link-column,
+  .contact-column {
+    margin: 10px 0;
+  }
+}
 @media (min-width: 769px) and (max-width: 992px) {
   nav p,
   label p,
@@ -12402,17 +12415,17 @@ nav .nav-contacts:active {
   .portfolio-section p,
   .contact-description p,
   .social-link a,
-  .cv-content p,
-  .cv-content ul,
-  .cv-header p,
   footer {
     font-size: 18px;
   }
   body .section-title {
     font-size: 45px;
   }
-  body .cv-section .cv-title {
-    font-size: 48px;
+  body .cv-section {
+    height: 100vh;
+  }
+  body .cv-section .cv-container {
+    height: 83vh;
   }
   body .about-section h3, body .about-section .h3 {
     font-size: 25px;
@@ -12441,8 +12454,15 @@ nav .nav-contacts:active {
   body .section-title {
     font-size: 40px;
   }
-  body .cv-section .cv-title {
-    font-size: 45px;
+  body .cv-section {
+    height: 200vh;
+  }
+  body .cv-section .cv-container {
+    height: 95vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
   }
   body .about-section h3, body .about-section .h3 {
     font-size: 20px;
@@ -12456,7 +12476,7 @@ nav .nav-contacts:active {
     margin: 10px 0;
   }
 }
-@media (min-width: 414px) and (max-width: 600px) {
+@media (min-width: 414px) and (max-width: 601px) {
   nav p,
   label p,
   .home-section p,
@@ -12474,8 +12494,20 @@ nav .nav-contacts:active {
   body .section-title {
     font-size: 35px;
   }
-  body .cv-section .cv-title {
-    font-size: 42px;
+  body .cv-section {
+    height: 100vh;
+  }
+  body .cv-section .cv-container {
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+  body .cv-section .cv-page-1,
+  body .cv-section .cv-page-2 {
+    height: 50%;
+    width: 100%;
   }
   body .about-section h3, body .about-section .h3 {
     font-size: 17px;
@@ -12496,7 +12528,7 @@ nav .nav-contacts:active {
     padding-bottom: 15px;
   }
 }
-@media (max-width: 413px) {
+@media (max-width: 414px) {
   nav p,
   label p,
   .home-section p,
@@ -12514,8 +12546,15 @@ nav .nav-contacts:active {
   body .section-title {
     font-size: 30px;
   }
-  body .cv-section .cv-title {
-    font-size: 40px;
+  body .cv-section {
+    height: 120vh;
+  }
+  body .cv-section .cv-container {
+    height: 50vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
   }
   body .about-section h3, body .about-section .h3 {
     font-size: 17px;
